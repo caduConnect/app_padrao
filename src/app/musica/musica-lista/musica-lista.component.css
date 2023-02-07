@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+.container {
+    margin-top: 160px !important;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    width: 30rem;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+
+}
+
+.container-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #282828;
+    color: #B3B3B3;
+    font-size:small;
+    font-family: 'Comfortaa', sans-serif !important;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+th {
+    background-color: #282828;
+    color: #B3B3B3;
+}
+
+button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 3px;
+}

@@ -1,0 +1,61 @@
+.container {
+    margin-top: 160px !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    color: azure;
+    width: 30rem;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.container-table {
+    display: flex;
+}
+
+.container-form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    height: 2rem;
+    border: 1px #15b64d solid;
+    outline: none;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.container-button .button {
+    background-color: #15b64d;
+    margin-top: 1rem;
+    width: 11rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    font-size: large;
+    color: azure;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.container-button .button:disabled {
+    color: rgb(61, 57, 57);
+    background-color: rgb(42, 143, 42);
+    cursor:auto;
+}
+

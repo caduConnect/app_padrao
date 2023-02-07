@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="container-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Autor</th>
+                <th>Duração</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let musica of musicas">
+                <td>{{ musica.nome }}</td>
+                <td>{{ musica.autor }}</td>
+                <td>{{ musica.duracao}}</td>
+                <td><button (click)="onEditar(musica.id)">Editar</button>
+                    <button (click)="onDelete(musica.id)">deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+.container-nav {
+    height: 60px;
+    background-color: #1CCC5B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 3rem;
+    font-weight: bold;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-right: 3rem;
+}
+
+.nav-buttons a:hover {
+    color: #0a471f;
+}

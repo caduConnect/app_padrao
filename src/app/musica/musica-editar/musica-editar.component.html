@@ -1,0 +1,41 @@
+<div class="container">
+    <h1 class="">{{ title }}</h1>
+    <div class="container-table">
+        <form (ngSubmit)="salvar()" #f="ngForm" class="container-form">
+           
+            <div class="tab">
+                <label for="nome">Nome</label>
+                <input pInputText name="Nome" required [(ngModel)]="musica.nome" #nome="ngModel" [ngClass]="{
+                    'ng-invalid ng-dirty':
+                      f.submitted &&
+                      nome.invalid &&
+                      (nome.dirty || nome.touched)
+                  }" class="input"/>
+            </div> <!--tab-nome-->
+
+            <div class="tab">
+                <label for="autor">Autor</label>
+                <input pInputText name="Autor" required [(ngModel)]="musica.autor" #autor="ngModel" [ngClass]="{
+                    'ng-invalid ng-dirty':
+                      f.submitted &&
+                      autor.invalid &&
+                      (autor.dirty || autor.touched)
+                  }" class="input"/>
+            </div><!--tab-autor-->
+
+            <div class="tab">
+                <label for="duracao">Duração</label>
+                <input pInputText name="Duracao" required [(ngModel)]="musica.duracao" #duracao="ngModel" [ngClass]="{
+                    'ng-invalid ng-dirty':
+                      f.submitted &&
+                     duracao.invalid &&
+                      (duracao.dirty || duracao.touched)
+                  }" class="input"/>
+            </div><!--tab-duracao-->
+
+            <div class="container-button">
+                <button label="Salvar" [disabled]="!f.valid" class="button">Salvar</button>
+            </div>
+        </form>
+    </div> <!--container-table-->
+</div> <!--container-->
